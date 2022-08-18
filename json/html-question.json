@@ -1,0 +1,162 @@
+[
+    {
+        "question": "Choose the correct HTML tag for the largest heading.",
+        "answer_1": "H1",
+        "answer_2": "Heading",
+        "answer_3": "Head",
+        "answer_4": "H6",
+        "right_answer": "H1"
+    },
+    {
+        "question": "What is the correct HTML for creating a hyperlink? (note: Where you see a big space, that is where a bracket should be.)",
+        "answer_1": "A url='http://www.google.com' Google.com /a",
+        "answer_2": "A http://www.google.com /a",
+        "answer_3": "A href='http://www.google.com' Google /a",
+        "answer_4": "A name='http://www.google.com' Google.com /a",
+        "right_answer": "A href='http://www.google.com' Google /a"
+    },
+    {
+        "question": "What is the correct HTML for inserting an image?",
+        "answer_1": "Img href='image.gif /",
+        "answer_2": "Img src='image.gif' /",
+        "answer_3": "Image src='image.gif' /",
+        "answer_4": "Img>image.gif",
+        "right_answer": "Img src='image.gif' /"
+    },
+    {
+        "question": "Who is making the Web Standards?",
+        "answer_1": "Mozilla",
+        "answer_2": "Microsoft",
+        "answer_3": "Apple",
+        "answer_4": "The World Wide Web Consortium",
+        "right_answer": "The World Wide Web Consortium"
+    },
+    {
+        "question": "What does HTML stand for?",
+        "answer_1": "Hyper Text Markup Language",
+        "answer_2": "Hyperlinks and Text Markup Language",
+        "answer_3": "Home Tool Markup Language",
+        "answer_4": "Home and Text Makeup Language",
+        "right_answer": "Hyper Text Markup Language"
+    },
+    {
+        "question": "What is the correct sequence of HTML tags for starting a  webpage?",
+        "answer_1": "Head, Title, HTML",
+        "answer_2": "Title, Head, HTML",
+        "answer_3": "HTML, Head, Title",
+        "answer_4": "All of these",
+        "right_answer": "HTML, Head, Title"
+    },
+    {
+        "question": "What is the correct HTML tag for inserting a line break?",
+        "answer_1": "Br",
+        "answer_2": "Break",
+        "answer_3": "Lb ",
+        "answer_4": "Break/br/",
+        "right_answer": "Br"
+    },
+    {
+        "question": "What is the correct HTML for adding a background color?",
+        "answer_1": "Body style='background-color: yellow'",
+        "answer_2": "Background yellow /background",
+        "answer_3": "Body background='yellow'",
+        "answer_4": "All of these",
+        "right_answer": "Body style='background-color: yellow'"
+    },
+    {
+        "question": "Choose the correct HTML tag to make text bold?",
+        "answer_1": "Bold",
+        "answer_2": "B",
+        "answer_3": "Bld ",
+        "answer_4": "Bl",
+        "right_answer": "B"
+    },
+    {
+        "question": "Choose the correct HTML tag to make the text italic.",
+        "answer_1": "Italic",
+        "answer_2": "It",
+        "answer_3": "I",
+        "answer_4": "Ii",
+        "right_answer": "I"
+    },
+    {
+        "question": "How can you create an email link?",
+        "answer_1": "A href='mailto:xxx@yyy'",
+        "answer_2": "A href='xxx@yyy'",
+        "answer_3": "Mail>xxx@yyy ",
+        "answer_4": "Mail href='xxx@yyy'",
+        "right_answer": "A href='mailto:xxx@yyy'"
+    },
+    {
+        "question": "How can you make a list that lists the items with numbers?",
+        "answer_1": "Ol",
+        "answer_2": "Dl",
+        "answer_3": "Ul",
+        "answer_4": "List",
+        "right_answer": "Ol"
+    },
+    {
+        "question": "How can you make a list that lists the items with bullets",
+        "answer_1": "Dl",
+        "answer_2": "Ul",
+        "answer_3": "Ol",
+        "answer_4": "List",
+        "right_answer": "Ul"
+    },
+    {
+        "question": "What is the correct HTML for inserting a background image?",
+        "answer_1": "Background img='background.gif'",
+        "answer_2": "Img src='background.gif' background /",
+        "answer_3": "Body background='background.gif'",
+        "answer_4": "All of these",
+        "right_answer": "Body background='background.gif'"
+    },
+    {
+        "question": "A 'radio' button used on a web page, would allow a person to select:",
+        "answer_1": "More than one item.",
+        "answer_2": "Only one item.",
+        "answer_3": "Two item",
+        "answer_4": "Infinite item",
+        "right_answer": "Only one item."
+    },
+    {
+        "question": "HTML is what type of language ?",
+        "answer_1": "Scripting Language",
+        "answer_2": "Markup Language",
+        "answer_3": "Programming Language",
+        "answer_4": "Network Protocol",
+        "right_answer": "Markup Language"
+    },
+    {
+        "question": "HTML uses",
+        "answer_1": "User defined tags",
+        "answer_2": "Pre-specified tags",
+        "answer_3": "Fixed tags defined by the language",
+        "answer_4": "Tags only for linking",
+        "right_answer": "Fixed tags defined by the language"
+    },
+    {
+        "question": "The year in which HTML was first proposed _______.",
+        "answer_1": "1990",
+        "answer_2": "1980",
+        "answer_3": "2000",
+        "answer_4": "1995",
+        "right_answer": "1990"
+    },
+    {
+        "question": "Fundamental HTML Block is known as ___________.",
+        "answer_1": "HTML Body",
+        "answer_2": "HTML Tag",
+        "answer_3": "HTML Attribute",
+        "answer_4": "HTML Element",
+        "right_answer": "HTML Tag"
+    },
+    {
+        "question": "Apart from <b> tag, what other tag makes text bold ?",
+        "answer_1": "<fat>",
+        "answer_2": "<strong>",
+        "answer_3": "<black>",
+        "answer_4": "<emp>",
+        "right_answer": "<strong>"
+    }
+]

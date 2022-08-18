@@ -1,0 +1,162 @@
+[
+    {
+        "question": "The CSS property used to control the element's font-size is__________",
+        "answer_1": "font-size",
+        "answer_2": "text-size",
+        "answer_3": "text-style",
+        "answer_4": "None",
+        "right_answer": "font-size"
+    },
+    {
+        "question": "The HTML attribute used to define the internal stylesheet is___________",
+        "answer_1": "style",
+        "answer_2": "<style>",
+        "answer_3": "<link>",
+        "answer_4": "<script>",
+        "right_answer": "<style>"
+    },
+    {
+        "question": "Which of the following CSS property is used to set the background image of an element?",
+        "answer_1": "background-color",
+        "answer_2": "background-image",
+        "answer_3": "background-attachment",
+        "answer_4": "None",
+        "right_answer": "background-image"
+    },
+    {
+        "question": "Which of the following is the correct syntax to display the hyperlinks without any underline?",
+        "answer_1": "a {decoration : no-underline;}",
+        "answer_2": "a {text-decoration : underline;}",
+        "answer_3": "a {text-decoration : none;}",
+        "answer_4": "None",
+        "right_answer": "a {text-decoration : none;}"
+    },
+    {
+        "question": "Which of the following is the correct syntax to make the background-color of all paragraph elements to yellow?",
+        "answer_1": "all {background-color : yellow;}",
+        "answer_2": "p {background-color : #yellow;}",
+        "answer_3": "p {background-color : yellow;}",
+        "answer_4": "all p {background-color : #yellow;}",
+        "right_answer": "p {background-color : yellow;}"
+    },
+    {
+        "question": "Which of the following property is used as the shorthand property for the padding properties?",
+        "answer_1": "padding-right",
+        "answer_2": "padding-left",
+        "answer_3": "padding",
+        "answer_4": "All of the above",
+        "right_answer": "padding"
+    },
+    {
+        "question": " How to select the elements with the class name “example”?",
+    "answer_1": "example",
+    "answer_2": "#example",
+    "answer_3": "Class example",
+    "answer_4": ".example",
+        "right_answer": ".example"
+    },
+    {
+        "question": "The CSS property used to make the text bold is___________",
+    "answer_1": "weight: bold",
+    "answer_2": "font-weight: bold",
+    "answer_3": "style: bold",
+    "answer_4": "font: bold",
+        "right_answer": "font-weight: bold"
+    },
+    {
+        "question": "The property in CSS used to change the background color of an element is_____________",
+    "answer_1": "background-color",
+    "answer_2": "color",
+    "answer_3": "bgcolor",
+    "answer_4": "None",
+        "right_answer": "background-color"
+    },
+    {
+        "question": "Which of the following syntax is correct in CSS to make each word of a sentence start with a capital letter?",
+    "answer_1": "transform: capitalize;",
+    "answer_2": "text-style: capital;",
+    "answer_3": "text-transform: capital;",
+    "answer_4": "text-transform: capitalize;",
+        "right_answer": "text-transform: capitalize;"
+    },
+    {
+        "question": "CSS stands for _________",
+        "answer_1": "Color and style sheets",
+        "answer_2": "Cascading style sheet",
+        "answer_3": "Cascade style sheets",
+        "answer_4": "None",
+        "right_answer": "Cascading style sheet"
+    },
+    {
+        "question": "Which of the following is the correct syntax for referring the external style sheet?",
+        "answer_1": "<style src = “example.css” >",
+        "answer_2": "<style src = example.css>",
+        "answer_3": "<stylesheet> example.css </stylesheet>",
+        "answer_4": "<link rel=”stylesheet” type=”text/css” href=”example.css”>",
+        "right_answer": "<link rel=”stylesheet” type=”text/css” href=”example.css”>"
+    },
+    {
+        "question": "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+        "answer_1": "text-indent",
+        "answer_2": "writing-mode",
+        "answer_3": "word-break",
+        "answer_4": "None",
+        "right_answer": "writing-mode"
+    },
+    {
+        "question": "Which of the following is the correct syntax to select all paragraph elements in a div element?",
+        "answer_1": "p",
+        "answer_2": "div p",
+        "answer_3": "div#p",
+        "answer_4": "div ~p",
+        "right_answer": "div p"
+    },
+    {
+        "question": "Which of the following CSS property is used to add shadows to the text?",
+        "answer_1": "text-stroke",
+        "answer_2": "text-decoration",
+        "answer_3": "text-shadow",
+        "answer_4": "text-overflow",
+        "right_answer": "text-shadow"
+    },
+    {
+        "question": "Which of the following CSS property is used to specify whether the table cells share the common or separate border?",
+        "answer_1": "border-radius",
+        "answer_2": "border-collapse",
+        "answer_3": "border-spacing",
+        "answer_4": "None",
+        "right_answer": "border-collapse"
+    },
+    {
+        "question": "The HTML attribute used to define the inline styles is___________",
+        "answer_1": "class",
+        "answer_2": "styles",
+        "answer_3": "style",
+        "answer_4": "None of the above",
+        "right_answer": "style"
+    },
+    {
+        "question": "The CSS property used to draw a line around the elements outside the border?",
+        "answer_1": "line",
+        "answer_2": "border",
+        "answer_3": "padding",
+        "answer_4": "outline",
+        "right_answer": "outline"
+    },
+    {
+        "question": "Which of the following is the correct syntax to select the p siblings of a div element?",
+        "answer_1": "p",
+        "answer_2": "div  p",
+        "answer_3": "div + p",
+        "answer_4": "div ~ p",
+        "right_answer": "div ~p"
+    },
+    {
+        "question": "Which of the following is used to specify the subscript of text using CSS?",
+        "answer_1": "vertical-align: super",
+        "answer_2": "vertical-align: sub",
+        "answer_3": "vertical-align: subscript",
+        "answer_4": "None",
+        "right_answer": "vertical-align : sub"
+    }
+]

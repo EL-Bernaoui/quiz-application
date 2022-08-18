@@ -1,0 +1,162 @@
+[
+    {
+        "question": "Why so JavaScript and Java have similar name?",
+        "answer_1": "JavaScript is stripped-down version of Java",
+        "answer_2": "JavaScript's syntax is loosely based on Java's",
+        "answer_3": "They both originated on the island Java",
+        "answer_4": "None of the above",
+        "right_answer": "JavaScript's syntax is loosely based on Java's"
+    },
+    {
+        "question": "When a user views a page containing a JavaScript program, which machine actually executes the script?",
+        "answer_1": "The User's machine running a Web browser",
+        "answer_2": "The Web server",
+        "answer_3": "A central machine deep within Nescape's corporate offices",
+        "answer_4": "None of the above",
+        "right_answer": "The User's machine running a Web browser"
+    },
+    {
+        "question": "______JavaScript is also called client-side JavaScript",
+        "answer_1": "Microsoft",
+        "answer_2": "Navigator",
+        "answer_3": "LiveWire",
+        "answer_4": "Native",
+        "right_answer": "Navigator, LiveWire"
+    },
+    {
+        "question": "what are variable used for JavaScript Programs?",
+        "answer_1": "Storing numbers, dates, or other values",
+        "answer_2": "Varying randomly",
+        "answer_3": "Causing hight-school algebra flashbacks",
+        "answer_4": "None of the above",
+        "right_answer": "Storing numbers, dates, or other values"
+    },
+    {
+        "question": "______JavaScript statement embedded in an HTML page can respond to user events such as mouse-clicks, form input, and page navigation",
+        "answer_1": "Client-side",
+        "answer_2": "Server-side",
+        "answer_3": "Local",
+        "answer_4": "Native",
+        "right_answer": "Client-side"
+    },
+    {
+        "question": "Which of the following can't be done with client-side JavaScript",
+        "answer_1": "Validating a form",
+        "answer_2": "Sending a form's content by email",
+        "answer_3": "Storing the form's content to a database file on the server",
+        "answer_4": "None of the above",
+        "right_answer": "Storing the form's content to a database file on the server"
+    },
+    {
+        "question": "Which of the following are capabilities of function in JavaScript?",
+        "answer_1": "Return a value",
+        "answer_2": "Accept parameters and Return a value",
+        "answer_3": "Accept parameters",
+        "answer_4": "None of the above",
+        "right_answer": "Accept parameters"
+    },
+    {
+        "question": "Which of the following is not a valid JavaScript variable name?",
+        "answer_1": "2names",
+        "answer_2": "_first_and_last_names",
+        "answer_3": "FirstAndLast",
+        "answer_4": "None of the above",
+        "right_answer": "2names"
+    },
+    {
+        "question": "______tag is an extention to HTML that can enclose any number of JavaScript statements.",
+        "answer_1": "<SCRIPT>",
+        "answer_2": "<BODY>",
+        "answer_3": "<HEAD>",
+        "answer_4": "<TITLE>",
+        "right_answer": "<SCRIPT>"
+    },
+    {
+        "question": "How does JavaScript store dates in a date object?",
+        "answer_1": "The number of milliseconds since January 1st, 1970",
+        "answer_2": "The number of days since January 1st, 1900",
+        "answer_3": "The number of seconds since Netscape's public stock offering.",
+        "answer_4": "None of the above",
+        "right_answer": "The number of milliseconds since January 1st, 1970"
+    },
+    {
+        "question": "Which of the following attribute can hold the JavaScript version?",
+        "answer_1": "LANGUAGE",
+        "answer_2": "SCRIPT",
+        "answer_3": "VERSION",
+        "answer_4": "None of the above",
+        "right_answer": "LANGUAGE"
+    },
+    {
+        "question": "What is the correct JavaScript syntax to write 'Hello World'?",
+        "answer_1": "system.out.println('Hello World')",
+        "answer_2": "println('Hello World')",
+        "answer_3": "document.write('Hello World')",
+        "answer_4": "response.write('Hello World')",
+        "right_answer": "document.write('Hello World')"
+    },
+    {
+        "question": "Which of the following way can be used to indicate the LANGUAGE attribute?",
+        "answer_1": "<LANGUAGE='JavaScriptVersion'>",
+        "answer_2": "<SCRIPT LANGUAGE='JavaScriptVersion'>",
+        "answer_3": "<SCRIPT LANGUAGE='JavaScriptVersion'> JavaScript statements...</SCRIPT>",
+        "answer_4": "<SCRIPT LANGUAGE='JavaScriptVersion'!> JavaScript statements...</SCRIPT>",
+        "right_answer": "<SCRIPT LANGUAGE='JavaScriptVersion'> JavaScript statements...</SCRIPT>"
+    },
+    {
+        "question": "Inside which HTML element do we put the JavaScript?",
+        "answer_1": "<js>",
+        "answer_2": "<scripting>",
+        "answer_3": "<script>",
+        "answer_4": "<javascript>",
+        "right_answer": "<script>"
+    },
+    {
+        "question": "What is the correct syntax for referring to an external script 'abc.js'?",
+        "answer_1": "<script href='abc.js'>",
+        "answer_2": "<script name='abc.js'>",
+        "answer_3": "<script src='abc.js'>",
+        "answer_4": "None of the above",
+        "right_answer": "<script src='abc.js'>"
+    },
+    {
+        "question": "Which types of image maps can be used with JavaScript?",
+        "answer_1": "Server-side image maps",
+        "answer_2": "Client-side image maps",
+        "answer_3": "Server-side image maps and Client-side image maps",
+        "answer_4": "None of the above",
+        "right_answer": "Client-side image maps"
+    },
+    {
+        "question": "Which of the following navigator object properties is the same in both Netscape and IE?",
+        "answer_1": "navigator.appCodeName",
+        "answer_2": "navigator.appName",
+        "answer_3": "navigator.appVersion",
+        "answer_4": "None of the above",
+        "right_answer": "navigator.appCodeName"
+    },
+    {
+        "question": "Which is the correct way to write a JavaScript array?",
+        "answer_1": "var txt = new Array(1:'tim', 2:'kim', 3:'jim')",
+        "answer_2": "var txt = new Array:1=('tim') 2=('kim') 3=('jim')",
+        "answer_3": "var txt = new Array('tim', 'kim', 'jim')",
+        "answer_4": "var txt = new Array= 'tim', 'kim', 'jim'",
+        "right_answer": "var txt = new Array('tim', 'kim', 'jim')"
+    },
+    {
+        "question": "What does the <noscript> tag do?",
+        "answer_1": "Enclose text to be displayed by non-JavaScript browsers.",
+        "answer_2": "Prevent scripts on the page from executing.",
+        "answer_3": "Describes certain low-budget movies.",
+        "answer_4": "None of the above",
+        "right_answer": "Enclose text to be displayed by non-JavaScript browsers."
+    },
+    {
+        "question": "If para1 is the DOM object for paragraph, what is the correct syntax to change the the text within the paragraph?",
+        "answer_1": "'New Text'",
+        "answer_2": "para1.value = 'New Text'",
+        "answer_3": "para1.firstChild.nodeValue = 'New Text'",
+        "answer_4": "para1.nodeValue = 'New Text'",
+        "right_answer": "para1.value = 'New Text'"
+    }
+]

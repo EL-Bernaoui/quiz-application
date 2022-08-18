@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+
+    <!-- Font Awesome Links -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start Select Language And number of Questions -->
+    <div class="start">
+        <dev class="select">
+            <select id="language">
+                <option selected disabled>Select The Language</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </dev>
+        <dev class="select">
+            <select id="numbers">
+                <option selected disabled>Select The Number Of Questions</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </dev>
+        <button class="btn-start full-btn">Start Quiz</button>
+    </div>
+    <!-- End Select Language And number of Questions -->
+    <!-- Start Tips -->
+    <div class="tips">
+        <h2>Some Rules of this Quiz</h2>
+        <div class="tips-content">
+            <p>1. You have only <span>15 seconds</span> per each question.</p>
+            <p>2. Once you select your answer, it can't be undone.</p>
+            <p>3. you can't select any option once time goes off.</p>
+            <p>4. You can't exit from the Quiz while you're playing.</p>
+            <p>5. You'll get points on the basis of your correct answers.</p>
+        </div>
+        <div class="form">
+            <button class="exit notfull-btn">Exit Quiz</button>
+            <button class="continue full-btn">Continue</button>
+        </div>
+    </div>
+    <!-- End Tips -->
+    <!-- Start Questions -->
+    <div class="container">
+        <header>
+            <p>Category: <span class="language"></span></p>
+            <div class="box-time">
+                <p>Time Left <span class="count">15</span></p>
+            </div>
+            <span class="progress"></span>
+        </header>
+        <section>
+        </section>
+        <footer>
+            <p><span class="current"></span> of <span class="all"></span> Questions</p>
+                <button class="next-que next">Next Que</button>
+                <button class="next-que submit">Submit</button>
+        </footer>
+    </div>
+    <!-- End Questions -->
+    <!-- Start Result -->
+    <div class="result">
+        <span class="close">X</span>
+        <i class="fas fa-crown final-score"></i>
+        <!-- <i class="fas fa-trophy"></i> -->
+        <div class="result-text">
+            <p>You've completed the Quiz!</p>
+            <div class="first-score">
+                <p>And <span id="word"></span>, You got <span class="only"></span> <span class="right-answer"></span> out of <span class="total-que"></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- End Result -->
+    <script src="main.js"></script>
+</body>
+</html>

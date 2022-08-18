@@ -1,0 +1,405 @@
+/* :root {
+    --main-color: #0079f8;
+    --que-color: #f2faff;
+    --que-hover-color: #cde6fe;
+    --seconds-color: #323a40;
+    --box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+                  0 6px 20px 0 rgba(0,0,0,0.19);
+} */
+:root {
+    --main-color: #009688;
+    --que-color: #00968826;
+    --que-hover-color: #00968866;
+    --seconds-color: #323a40;
+    --box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+                  0 6px 20px 0 rgba(0,0,0,0.19);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: var(--main-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+/* Start Custom Button */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+button.notfull-btn {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+button.notfull-btn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+button.full-btn {
+    /* background-color: rgb(0 121 248 / 70%); */
+    background-color: #009688b3;
+    color: white;
+}
+button.full-btn:hover {
+    background-color: var(--main-color);
+}
+.start,
+.tips,
+.container,
+.result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End Custom Button */
+/* Start Select Language And number of Questions */
+.start {
+    background-color: white;
+    width: 330px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+}
+.start .select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 0 !important;
+    flex: 1;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #0096884d;
+    font-size: 14px;
+    font-weight: 600;
+}
+.start .select select::-ms-expand {
+    display: none;
+}
+.start .select {
+    position: relative;
+    display: flex;
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.start .select::before,
+.start .select::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+.start .select::before {
+    content: "";
+    height: 40px;
+    width: 37px;
+    /* background-color: rgb(0 121 248 / 50%); */
+    background-color: #00968880;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .3s;
+}
+.start .select:hover:before {
+    /* background-color: rgb(0 121 248 / 80%); */
+    background-color: #009485cc;
+}
+.start .select::after {
+    content: "\25BC";
+    padding: 0 10px;
+    transition: .3s all ease;
+    color: white;
+}
+.start .select.turn::after {
+    transform: rotate(180deg);
+}
+.start .btn-start {
+    align-self: flex-end;
+}
+/* End Select Language And number of Questions */
+/* Start Tips */
+.tips {
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    width: 520px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(360deg) scale(.5);
+    transition: .5s;
+}
+.tips.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+.tips h2 {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    position: relative;
+}
+.tips h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e7e7e7;
+}
+.tips .tips-content {
+    padding: 0 30px 20px;
+}
+.tips .tips-content p {
+    padding: 5px 0;
+    font-weight: 500;
+}
+.tips .tips-content p span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.tips .form {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.tips .form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e7e7e7;
+}
+/* End Tips */
+/* Start Questions */
+.container {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    width: 600px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    overflow: hidden;
+}
+.container.open {
+    opacity: 1;
+    pointer-events: all;
+    perspective-origin: center;
+}
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.container header > p {
+    font-size: 18px;
+}
+.container header > p > span {
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.container header .box-time {
+    background-color: var(--que-hover-color);
+    align-self: flex-end;
+    padding: 15px 10px;
+    border-radius: 3px;
+}
+.container header .box-time p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container header .box-time span {
+    color: white;
+    background-color: var(--seconds-color);
+    padding: 6px 10px;
+    border-radius: 3px;
+    width: 42px;
+    height: 31px;
+}
+.text-blink {
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink {
+    0% {
+        color: white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        color: white;
+    }
+}
+.container .progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: var(--main-color);
+}
+.container section {
+    padding: 30px;
+}
+.container section .que-head {
+    margin-bottom: 30px;
+}
+.container section .que-head p {
+    font-size: 24px;
+    font-weight: bold;
+}
+.container section ul.answers li {
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    background-color: var(--que-color);
+    border: 2px solid var(--que-hover-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+.container section ul.answers li.active,
+.container section ul.answers li:hover {
+    background-color: var(--que-hover-color);
+}
+.container section ul.answers li:not(li.active).disabled {
+    pointer-events: none;
+}
+
+/* End Questions */
+/* Start Footer */
+.container footer {
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+}
+.container footer::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e7e7e7;
+}
+.container footer button.next-que {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: rgb(0 121 248 / 70%); */
+    background-color: #009688b3;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.container footer button.submit {
+    position: absolute;
+    right: 30px;
+}
+
+.container footer button.next-que.show {
+    opacity: 1;
+    pointer-events: all;
+}
+.container footer button.next-que:hover {
+    background-color: var(--main-color);
+}
+.container footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* End Footer */
+/* Start Result */
+.result {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    width: 450px;
+    /* height: 400px; */
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.result.show-result {
+    opacity: 1;
+    pointer-events: all;
+}
+.result span.close {
+    position: absolute;
+    right: -21px;
+    top: -16px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #009688b3;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    padding: 22px 0 0 17px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+.result span.close:hover {
+    background-color: var(--main-color);
+}
+.result .final-score {
+    font-size: 130px;
+    margin: 50px 0 30px;
+    color: var(--main-color);
+}
+.result .result-text {
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.result .result-text > :first-child {
+    font-size: 20px;
+}
+.result .form {
+    display: flex;
+    gap: 20px;
+}
+/* End Result */
